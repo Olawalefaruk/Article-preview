@@ -1,0 +1,232 @@
+/* the css reset starts here*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+/* the css reset ends here */
+
+html {
+  font-size: 30%;
+  box-sizing: border-box;
+  font-family: 'Manrope', sans-serif;
+}
+
+/* Layout styles starts here */
+.background {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-color: hsl(212, 23%, 69%);
+}
+
+.combine {
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(210, 46%, 95%);
+  width: 375px;
+  border-radius: 20px;
+  position: absolute;
+}
+
+.image-container {
+  width: 100%;
+  /* background-color: red; */
+}
+
+.text-container {
+  background-color: hsl(210, 46%, 95%);
+  padding: 20px;
+  border-radius: 0 0 20px 20px;
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mini-profile {
+  display: flex;
+  align-items: center;
+}
+
+.share-container,
+.share-container-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(212, 23%, 89%);
+  padding: 10px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.share-container-2 {
+  background-color: hsl(214, 17%, 40%);
+}
+
+.share-container:hover {
+  cursor: pointer;
+  background-color: hsl(214, 17%, 40%);
+}
+
+.floating-container {
+  background-color: hsl(217, 19%, 35%);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  border-radius: 0 0 20px 20px;
+  bottom: -225px;
+  width: 375px;
+}
+
+.social-media {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Layout styles ends here */
+
+/* Image styles starts here */
+.image-container img {
+  width: 100%;
+  height: 30vh;
+  border-radius: 20px 20px 0 0;
+}
+
+.mini-profile img {
+  width: 30px;
+  border-radius: 30px;
+  margin-right: 10px;
+}
+
+.social-media img {
+  margin-right: 15px;
+}
+/* Image styles ends here */
+
+/* Text styles starts here */
+h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 5rem;
+  color: hsl(217, 19%, 35%);
+  padding: 20px 0;
+}
+
+p {
+  font-size: 3rem;
+  line-height: 5rem;
+  color: hsl(212, 23%, 69%);
+  padding: 20px 0;
+}
+
+h2 {
+  font-size: 2.3rem;
+  font-weight: 700;
+  line-height: 4rem;
+  color: hsl(217, 19%, 35%);
+}
+
+h3 {
+  font-size: 2.1rem;
+  color: hsl(212, 23%, 69%);
+}
+
+h4 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  color: hsl(212, 23%, 69%);
+}
+
+/* Text styles ends here */
+
+.hidden {
+  display: none;
+}
+
+/* System styles */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Media Query for desktop view starts here*/
+@media screen and (min-width: 781px) {
+  html {
+    font-size: 25%;
+    box-sizing: border-box;
+  }
+
+  .combine {
+    flex-direction: row;
+    width: 50%;
+    border-radius: 20px;
+  }
+
+  .image-container {
+    width: 40%;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .text-container {
+    background-color: hsl(210, 46%, 95%);
+    padding: 20px;
+    border-radius: 0 20px 20px 0;
+  }
+
+  .image-container img {
+    width: 100%;
+    height: 60vh;
+    border-radius: 20px 0 0 20px;
+  }
+
+  h1,
+  p {
+    max-width: 350px;
+  }
+
+  .floating-container {
+    padding: 20px;
+    border-radius: 10px;
+    bottom: -20px;
+    right: -160px;
+    width: 25%;
+  }
+
+  .hidden-2 {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .floating-container {
+    bottom: -20px;
+    right: -200px;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .floating-container {
+    bottom: -10px;
+    right: -200px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .floating-container {
+    bottom: -10px;
+    right: -250px;
+  }
+}
+/* Media Query for desktop view ends here*/
